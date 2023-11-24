@@ -1,0 +1,9 @@
+public class AssignObj {
+    int x = 10;
+
+    public static void main(String[] args) {
+        AssignObj myObj = new AssignObj();
+        myObj.x = 25; // x is now 25
+        System.out.println(myObj.x);
+    }
+}
