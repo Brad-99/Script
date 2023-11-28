@@ -7,11 +7,11 @@ public class Main {
 
         System.out.println("s Color: " + s.color);
         System.out.println("s Size: " + s.size);
-        System.out.println("s Material: " + s.material);
+        System.out.println("s Material: " + shirt.material);
         System.out.println("-------------------------------------------------------");
         System.out.println("s Color: " + blackShirt.color);
         System.out.println("s Size: " + blackShirt.size);
-        System.out.println("s Material: " + s.material);
+        System.out.println("s Material: " + shirt.material);
 
     }
 }
