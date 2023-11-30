@@ -1,11 +1,13 @@
 // Iterative java program to reverse an 
 // array 
+
+import java.util.Scanner;
+
 public class reverseArray { 
 	
 /* Function to reverse arr[] from 
 	start to end*/
-	static void rvereseArray(int arr[], 
-					int start, int end) 
+	static void rvereseArray(int arr[], int start, int end) 
 	{ 
 		int temp; 
 		
@@ -29,17 +31,29 @@ public class reverseArray {
 		
 		System.out.println(); 
 	} 
+// Driver code
+public static void main(String args[]) {
 
-	// Driver code 
-	public static void main(String args[]) { 
-		
-		int arr[] = {1, 2, 3, 4, 5, 6}; 
-		printArray(arr, 6); 
-		rvereseArray(arr, 0, 5); 
-		System.out.print("Reversed array is \n"); 
-		printArray(arr, 6); 
-		
-	} 
-} 
+    Scanner input = new Scanner(System.in);
 
-// This code is contributed by Sam007 
+    // Prompt the user for the size of the array
+    System.out.print("Enter the size of the array: ");
+    int size = input.nextInt();
+
+    int arr[] = new int[size]; // Create an array of the specified size
+
+    // Prompt the user to enter the elements of the array
+    System.out.print("Enter " + size + " integers separated by spaces: ");
+    for (int i = 0; i < size; i++) {
+        arr[i] = input.nextInt();
+    }
+
+    System.out.print("Original array is: ");
+    printArray(arr, size);
+    rvereseArray(arr, 0, size - 1);
+    System.out.print("Reversed array is: ");
+    printArray(arr, size);
+
+    input.close(); // Close the scanner when done with input
+}
+}
