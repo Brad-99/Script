@@ -21,14 +21,14 @@ class Pig implements Animal1, FirstInterface, SecondInterface {
         System.out.println("Zzz");
     }
 
-      public void myMethod() {
-    System.out.println("Some text..");
-  }
-  public void myOtherMethod() {
-    System.out.println("Some other text...");
-  }
-}
+    public void myMethod() {
+        System.out.println("Some text..");
+    }
 
+    public void myOtherMethod() {
+        System.out.println("Some other text...");
+    }
+}
 
 class AnimalInterface {
     public static void main(String[] args) {
