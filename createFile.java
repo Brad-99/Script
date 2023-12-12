@@ -1,4 +1,3 @@
-package FileDemo;
 
 import java.io.File; // Import the File class
 import java.io.IOException; // Import the IOException class to handle errors
@@ -20,7 +19,7 @@ public class createFile {
         // -------------------------------------------
         try {
             FileWriter puppyPen = new FileWriter("puppyToy.txt");
-            puppyPen.write("Bruh Java is easy");
+            puppyPen.write("M8 Java is easy innit?");
             puppyPen.close();
             System.out.println("Successfully wrote to the file");
         } catch (IOException somethingWrong) {
